@@ -1,6 +1,6 @@
-## DeviceDriversLabExam
+# DeviceDriversLabExam
 
-# Bazif Rasool
+## Bazif Rasool
 
 The Keylogger is a ready to add kernel module that records keyboard strokes of capital letters.
 
