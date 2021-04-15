@@ -1,0 +1,1 @@
+cmd_/home/hydra/Desktop/folder/keylogger.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000  --build-id=sha1  -T ./scripts/module-common.lds -o /home/hydra/Desktop/folder/keylogger.ko /home/hydra/Desktop/folder/keylogger.o /home/hydra/Desktop/folder/keylogger.mod.o;  true
